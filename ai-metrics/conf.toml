@@ -1,0 +1,40 @@
+[aimetrics.dev.hosts.ai]
+base_url    = "http://localhost:3002"
+
+[aimetrics.prod.hosts.ai]
+base_url    = "http://reporting-ai.herokuapp.com:80"
+
+[aimetrics.dev]
+port        = 3010
+username    = "bst"
+password    = "bst"
+
+[aimetrics.prod]
+port        = 80
+username    = "bst"
+password    = "bst"
+
+[aimetrics.estimators.RemoteBSTClassifier.create]
+url_suffix  = "classifier/create/{model_type}"
+method      = "POST"
+
+[aimetrics.estimators.RemoteBSTClassifier.train]
+url_suffix  = "classifier/{model_id}/train"
+method      = "POST"
+
+[aimetrics.estimators.RemoteBSTClassifier.predict]
+url_suffix  = "classifier/{model_id}/predict"
+method      = "POST"
+
+[aimetrics.estimators.RemoteBSTClassifier.destroy]
+url_suffix  = "classifier/{model_id}"
+method      = "DELETE"
+
+[aimetrics.estimators.RemoteBSTClassifier.get]
+url_suffix  = "classifier/{model_id}"
+method      = "GET"
+
+[aimetrics.metrics.data]
+url_suffix  = "{client_id}/{project_id}/classes"
+method      = "GET"
+

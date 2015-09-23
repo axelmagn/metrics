@@ -1,0 +1,11 @@
+-r ./testing.txt
+ipython===4.0.0
+jupyter===1.0.0
+ipdb===0.8.1
+pandas===0.16.2
+pyzmq===14.7.0
+jinja2===2.7.3
+jsonschema===2.5.1
+matplotlib===1.4.3
+seaborn===0.6.0
+#PySide===1.2.2
